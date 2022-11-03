@@ -3,6 +3,7 @@
     --secondary: lightblue;
     --main:aliceblue;
     --borderstyle: 5px solid gray;
+    --titlebackground: lightgray;
 }
 
 body {
@@ -129,7 +130,7 @@ main {
     width: 30%;
     display: flex;
     align-items: center;
-    background-color: beige;
+    background-color: var(--titlebackground);
     border:var(--borderstyle);
     border-left: 0px;
 }
@@ -170,7 +171,7 @@ main {
     margin-top: 30%;
     width: 40%;
     align-items: center;
-    background-color: beige;
+    background-color: var(--titlebackground);
     border: var(--borderstyle);
     border-left: 0px;
 }
@@ -205,12 +206,12 @@ footer {
         flex-wrap: wrap;
     }
     .card{
-        width: 50%;
+        width: 100%;
         transition: all 2s ease-in-out;
     }
     main  {
         display: flex;
-        width: 50%;
+        width: auto;
         transition: ease all .5s;
     }
     .contact ul li {
